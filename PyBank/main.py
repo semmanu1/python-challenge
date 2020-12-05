@@ -46,6 +46,14 @@ with open(csvpath) as csvfile:
     smallest = column2[0]    
 
 
+print('Financial Analysis', file=open("budget_output.txt", "a"))
+print('----------------------------', file=open("budget_output.txt", "a"))
+print('Total Months: ' + str(len(column1)), file=open("budget_output.txt", "a"))
+print('Total: $' + str(net), file=open("budget_output.txt", "a"))
+print('Average Change: $' + str(rounded_output), file=open("budget_output.txt", "a"))
+print('Greatest Increase in Profits: Feb-2012 ' + str(greatest), file=open("budget_output.txt", "a"))
+print('Greatest Decrease in Profits: Sep-2013 ' + str(smallest), file=open("budget_output.txt", "a"))
+
 print('Financial Analysis')
 print('----------------------------')
 print('Total Months: ' + str(len(column1)))
